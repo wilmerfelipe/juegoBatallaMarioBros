@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Mario Game!</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body class="body">
+        <h1>Super Mario Bros! 🔥💧🌱 &#128540;</h1>
+        <section class="seleccionar-jugador" id="seleccionarJugador">
+            <h2>Elige tu personaje favorito</h2>
+            <div class="tarjetas">
+                <input type="radio" name="personaje" id="mario" />
+                <label class="tarjeta-jugador" for="mario">
+                    <h2>Mario</h2>
+                    <img src="./ImageMario.png" alt="Image Mario">
+                </label>
+                <input type="radio" name="personaje" id="luigi" />
+                <label class="tarjeta-jugador" for="luigi">
+                    <h2>Luigi</h2>
+                    <img src="./ImageLuigi.png" alt="Image Luigi">
+                </label>
+                <input type="radio" name="personaje" id="toad" />
+                <label class="tarjeta-jugador" for="toad">
+                    <h2>Toad</h2>
+                    <img src="./ImageToad.png" alt="Image Peach">
+                </label>
+                <input type="radio" name="personaje" id="peach" />
+                <label class="tarjeta-jugador" for="peach">
+                    <h2>Peach</h2>
+                    <img src="./ImagePeach.png" alt="Image Peach">
+                </label>
+                <input type="radio" name="personaje" id="donkey" />
+                <label class="tarjeta-jugador" for="donkey">
+                    <h2>Donkey Kong</h2>
+                    <img src="./ImageDK.png" alt="Image Donkey Kong">
+                </label>
+            </div>
+            <button id="botonPersonaje" class="boton-personaje">Seleccionar</button>
+        </section>
+        <section id="seleccionarAtaque">
+            <div class="combate-container">
+                <div>
+                    <section id="imagePersonaje"></section>
+                    <h3><span id="personajeJugador"></span> tiene <span id="vidasJugador">3</span> vidas</h3>
+                </div>
+                <div>
+                    <img src="./ImageBowser.png" alt="Image Peach">
+                    <h3><span id="personajeEnemigo"></span> tiene <span id="vidasEnemigo">3</span> vidas </h3>
+                </div>
+            </div>
+            <h1 class="titulo-combate">Elige tu ataque:</h1>
+            <div class="tarjetas-ataques">
+                <button id="botonFuego" class="boton-de-ataque">Fuego 🔥</button>
+                <button id="botonAgua" class="boton-de-ataque">Agua 💧</button>
+                <button id="botonTierra" class="boton-de-ataque">Tierra 🌱</button>
+            </div>
+        </section>
+        <section class="mensajes" id="mensajes">
+        </section>
+        <section class="mensajes" id="mensajeFinal">
+        </section>
+        <section class="reiniciar" id="reiniciar">
+            <div class="reiniciar">
+                <button class="boton-personaje" id="botonReiniciar">Reiniciar</button>
+            </div>    
+        </section>
+        <script type="text/javascript" src="./FinalProject.js"></script>
+    </body>
+</html>

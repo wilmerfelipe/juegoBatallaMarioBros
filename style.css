@@ -1,0 +1,100 @@
+.body {
+    width: 90%;
+    height: 1dvh;
+    font-family: sans-serif;
+    background-image:
+    linear-gradient(to right,white, rgba(0, 52, 255, 0.4)), 
+    url("https://www.themoviedb.org/t/p/original/iJQIbOPm81fPEGKt5BPuZmfnA54.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.seleccionar-jugador {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tarjetas {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0px;
+}
+.tarjeta-jugador {
+    width: 290px;
+    height: 180px;
+    background: #11468F;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.tarjeta-jugador img {
+    width: 220px;
+}
+.tarjetas-ataques {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: center;
+    gap: 70px;
+    flex-wrap: wrap;
+}
+input {
+    display: none;
+}
+input:checked + label {
+    background-color: #5D8BF4;
+}
+.boton-de-ataque, .boton-personaje {
+    background-color: rgba(150, 5, 5, 0.499);
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-color: transparent;
+    width: 300px;
+    color: white;
+    font-family: sans-serif;
+}
+.boton-personaje:hover {
+    background-color: #11468F;
+}
+.boton-de-ataque:hover {
+    background-color: #972A2D;
+}
+.combate-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: end;
+}
+.combate-container img {
+    width: 200px;
+}
+.titulo-combate {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 30px;
+    margin-top: 0px;
+}
+.mensajes {
+    padding-left: 70px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.reiniciar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
